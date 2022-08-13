@@ -1,0 +1,249 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --navbar-height:60px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#logo{
+    margin: 6px 18px;
+}
+
+#logo img{
+    height: 90px;
+    margin: 3px 7px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family:  'Baloo Da 2', cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+#navbar ul li a{
+    color: aqua;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 22px;
+    text-decoration: none;
+}                       
+
+#navbar ul li a:hover{
+    color:blue;
+    background-color: black;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 330px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background:url('bg1.jpg') no-repeat center center/cover ;
+    position: absolute;
+    height: 60%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: red;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color: aqua;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.services-container{
+    height: 480px;
+}
+
+.services-container::before{
+    content: "";
+    position: absolute;
+    background: url("bg2.jpg");
+    width: 100%;
+    top: 455px;
+    left: 0px;
+    height: 64%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid rgb(9, 36, 244);
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 30px;
+    background-color: aquamarine;
+}
+
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+#client-section{
+    height: 360px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("bg.jpg");
+    width: 100%;
+    height: 47.5%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 24px;
+}
+
+#clients img{
+    height: 110px;
+}
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("contact.jpg")no-repeat center center/cover;
+    width: 100%;
+    height: 140%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10PX;
+    font-size: 1rem;
+}
+
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10PX;
+    font-size: 1rem;
+}
+
+#contact-box form{
+    width:40%;
+}
+
+#contact-box label{
+    font-size: 1rem;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+
+footer{
+    padding: 9px 20px;
+    color: rgb(6, 10, 248);
+}
+
+.h-primary{
+    color: red;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    color: blue;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: black;
+    color: blue;
+    margin: 17px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.bot{
+    padding: 6px 20px;
+    border: 2px solid gray;
+    background-color: grey;
+    color: black;
+    margin: 17px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.center{
+    text-align: center;
+}
